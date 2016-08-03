@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+char font[] = "monospace:size=14:antialias=true:hinting=true:hintstyle=hintslight";
 int borderpx = 2;
 
 /*
@@ -89,17 +89,17 @@ const char *colorname[] = {
 	"red3",
 	"green3",
 	"yellow3",
-	"blue2",
+	"#5c5cff",
 	"magenta3",
 	"cyan3",
-	"gray90",
+	"gray75",
 
 	/* 8 bright colors */
 	"gray50",
 	"red",
 	"green",
-	"yellow",
-	"#5c5cff",
+	"#eeee00",
+	"#8c8cff",
 	"magenta",
 	"cyan",
 	"white",
@@ -109,6 +109,7 @@ const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+	"#282828",
 };
 
 
@@ -117,7 +118,7 @@ const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
+unsigned int defaultbg = 258;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
 
